@@ -61,10 +61,35 @@
         'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-@media (orientation: portrait) and (max-width: 676px) {
+/* Design for Mobile devices */
+@media (max-width: 767px) {
     .container {
         display: flex;
         flex-direction: column;
+    }
+
+    .container>.card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container>.card>img {
+        margin: auto;
+    }
+
+    .container>.card>.review-container>.stars,
+    h4,
+    p {
+        text-align: center;
+    }
+}
+
+/* for Ipads and Tablets */
+/* Design for Mobile devices */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        display: flex;
+        flex-direction: row;
     }
 
     .container>.card {
